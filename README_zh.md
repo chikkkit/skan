@@ -10,7 +10,7 @@ SKAN网络也是EKE Principle（高效的KAN扩展原理）的一个理想示例
 ### 安装SKAN
 你可以通过PyPI轻松安装SKAN库：
 ```bash
-pip install skan
+pip install single-kan
 ```
 
 ### 构建基本网络
