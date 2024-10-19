@@ -12,7 +12,7 @@ The SKAN network also serves as an ideal example of the EKE Principle (Efficient
 ### Installing SKAN
 SKAN can be easily installed via PyPI using the following command:
 ```bash
-pip install skan
+pip install single-kan
 ```
 
 ### Building Basic Networks
