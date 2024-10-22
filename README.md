@@ -45,6 +45,7 @@ The SKAN library supports user-defined basis functions. Here's an example of a c
 ```python
 import torch
 import numpy as np
+from skan import SKANNetwork
 
 # Define custom basis function
 def lshifted_softplus(x, k):
