@@ -43,6 +43,7 @@ SKAN库支持用户自定义基函数。以下是一个自定义基函数的示�
 ```python
 import torch
 import numpy as np
+from skan import SKANNetwork
 
 # 定义自定义基函数
 def lshifted_softplus(x, k):
