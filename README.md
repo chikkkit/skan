@@ -3,7 +3,7 @@
 <p align="center"><b>English</b> / <a href="https://github.com/chikkkit/SKAN/blob/main/README_zh.md">简体中文</a></p>
 
 ## Introduction
-SKAN is an innovative KAN (Kolmogorov-Arnold Network) network, characterized by its core feature where each basis function depends on only one learnable parameter, as proposed in `this paper` [1]. This design enables SKAN to scale up to larger networks while maintaining the same number of parameters, thereby more effectively capturing complex interactions between parameters. This repository provides a complete code implementation of SKAN, including the construction of basic SKAN networks, SKAN networks with custom basis functions, and a series of learnable functions mentioned in paper [1]. The SKAN library is built on the PyTorch framework, with defined networks inheriting from PyTorch's `nn.Module`, ensuring full compatibility with the PyTorch ecosystem (including CUDA support).
+SKAN is an innovative KAN (Kolmogorov-Arnold Network) network, characterized by its core feature where each basis function depends on only one learnable parameter, as proposed in [`this paper`](https://arxiv.org/abs/2410.14951) [1]. This design enables SKAN to scale up to larger networks while maintaining the same number of parameters, thereby more effectively capturing complex interactions between parameters. This repository provides a complete code implementation of SKAN, including the construction of basic SKAN networks, SKAN networks with custom basis functions, and a series of learnable functions mentioned in paper [1]. The SKAN library is built on the PyTorch framework, with defined networks inheriting from PyTorch's `nn.Module`, ensuring full compatibility with the PyTorch ecosystem (including CUDA support).
 
 The SKAN network also serves as an ideal example of the EKE Principle (Efficient KAN Extension Principle). The EKE Principle emphasizes that in KAN networks, network performance can be more effectively enhanced by increasing parameters rather than complicating basis functions.
 
@@ -58,4 +58,4 @@ net = SKANNetwork([784, 100, 10], basis_function=lshifted_softplus).to(device)
 Custom basis functions should accept two parameters: the input value `x` and a unique learnable parameter `k` (keep this order of parameters). It is important to ensure that the basis function supports NumPy broadcasting operations and only uses libraries built on NumPy (such as PyTorch).
 
 ### Reference
-[1] LSS-SKAN: Efficient Kolmogorov–Arnold Networks based on Single-Parameterized Function(submited to arxiv)
+[1] Chen Z, Zhang X. LSS-SKAN: Efficient Kolmogorov-Arnold Networks based on Single-Parameterized Function[J]. arXiv preprint arXiv:2410.14951, 2024.
